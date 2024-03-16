@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Khula:wght@300;400;600;700;800&display=swap');
+
+:root{
+    --yellow : rgb(253 191 68);
+    --green : rgb(105 220 99);
+    --red : rgb(254 102 99);
+    --blue: rgb(93 181 253);
+    --background-blue: rgb(76 134 180);
+    --title-font: "Buda", serif;
+    --paragraph-font: "Khula", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    color: white;
+}
+
+body{
+    background-image: url(./svg/blue.jpg);
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title{
+    font-size: 12rem;
+    font-family: var(--title-font);
+    font-weight: 100;
+}
+
+.subtitle{
+    font-size: 6rem;
+    font-family: var(--paragraph-font);
+    font-weight: 100;
+}
+
+.menu{
+    display: grid;
+    width: 60%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.menu div{
+    height: 400px;
+    display: grid;
+    place-content: center;
+    margin-top: 40px;
+}
+
+.menu div img{
+    width: 150px;
+    filter: invert(100%);
+
+
+}
+
+.container-campana{
+    background-color: var(--yellow);
+}
+
+.container-gorro{
+    background-color: var(--blue);
+}
+
+.container-maletin{
+    background-color: var(--green);
+}
+
+.container-mundo{
+    background-color: var(--red);
+}
