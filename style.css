@@ -47,17 +47,26 @@ body{
 }
 
 .menu{
+    height: 450px;
     display: grid;
     width: 60%;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    margin-top: 40px;
+    align-items: center;
 }
 
 .menu div{
-    height: 400px;
+    height: 380px;
     display: grid;
     place-content: center;
-    margin-top: 40px;
+    
+    position: relative;
+    transition: .5s all;
+}
+
+.menu div:hover{
+    height: 100%
 }
 
 .menu div img{
